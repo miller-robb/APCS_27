@@ -10,12 +10,16 @@ import java.util.Random;
 
 class starter {
 	public static void main(String args[]) {
-		int ran;
-		ran = 100;
-		System.out.println(ran);
-		boolean dog;
-		dog = ran>5;
-		System.out.print(dog);
+		Scanner input=new Scanner(System.in);
+		String dog=input.nextLine();
+		
+		boolean answer=(dog.equals("hello"));
+		if(answer){
+			System.out.print("correct");
+		}
+		else{
+			System.out.print("wrong");
+		}
 
 
 
