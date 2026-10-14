@@ -9,17 +9,12 @@ import java.util.Random;
 
 
 class starter {
+	public static void dog(String Chicken){
+		System.out.print(Chicken);
+	}
 	public static void main(String args[]) {
-		Scanner input=new Scanner(System.in);
-		String dog=input.nextLine();
+		dog("bread");
 		
-		boolean answer=(dog.equals("hello"));
-		if(answer){
-			System.out.print("correct");
-		}
-		else{
-			System.out.print("wrong");
-		}
 
 
 

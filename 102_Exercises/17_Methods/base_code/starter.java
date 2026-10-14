@@ -1,14 +1,56 @@
 /*
- *	Author:
- *  Date:
- * 	Collaborator(s): 
+ *	Author: Miller Robb
+ *  Date: 10/14/26
+ * 	Collaborator(s): Cara Terry, Grant Tuggle
 */
 import java.util.Scanner;
 import java.util.Random;
 
 
 class starter {
-	// The goal of the first method is to give back whether the year given is a leap year or not. 2004 is a leap year.
+	public static boolean isLeapYear(int a){
+		int x=a;
+		if((x%100)==0){
+			if ((x%400)==0){
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+		
+		else if ((x%4)==0){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	public static int getDigitSum(int a){
+		int x=a;
+		int sum=0;
+		while(a>0){
+			sum=sum+(a%10);
+			a=a/10;
+
+		}
+		return sum;
+
+
+	}
+	public static void printIfConsecutive(int a, int b, int c){
+		if ((b==(a+1)) && (c==(b+1))){
+			System.out.println("these numbers are consecutive!");
+
+
+
+		}
+		else{
+			System.out.println("These numbers are not consecutive!");
+			
+		}
+		
+	}
 
 	// The goal of the second method is to add all the digits of a number up. Ex: 12345 has a total of 15.
 
@@ -21,10 +63,12 @@ class starter {
 		System.out.print("Enter a year: ");
 		int year = sc.nextInt();
 		System.out.println();
-		if(isLeapYear(year))
+		if(isLeapYear(year)){
 			System.out.println(year + " is a leap year!");
-		else
+		}
+		else{
 			System.out.println(year + " is not a leap year!");
+		}
 
 		System.out.println();
 		System.out.println("----------------------------------------");
