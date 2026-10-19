@@ -1,6 +1,6 @@
 /*
- *	Author:  
- *  Date: 
+ *	Author:  Miller Robb
+ *  Date: 10/15/26
 */
 
 import java.io.*;
@@ -13,7 +13,58 @@ class starter {
 	static ArrayList<String> arr = new ArrayList<String>();
 
 	public static void main(String args[]) throws InterruptedException {
-		// Write your code here!
+		populateArrayList();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Welcome to type quest!");
+		System.out.println("It is "+getTime()+" and we are ready to play!");
+		System.out.println("Given a sentence you must type it as fast as possible!");
+		System.out.println("");
+		System.out.println("--------------------------------------");
+		System.out.println("Would you like to?: ");
+		System.out.println("1 - type a random sentence?");
+		System.out.println("2 - select the sentence you would like to type?");
+		System.out.println("3 - quit?");
+		System.out.println("");
+		int select=sc.nextInt();
+
+		while(select!=3){
+			if (select==1){
+			System.out.println("You have chosen to randomly select your sentence.");
+			System.out.println("---------------------Your sentence is------------------");
+			System.out.println(getSentence());
+			System.out.println("-------------------------------------------------------");
+			countdown();
+			startTimer();
+			String sentence=sc.nextLine();
+
+			System.out.println("Nice job! Here are your results!");
+
+			double time=endTimer();
+
+			System.out.println("Time: "+time);
+
+			compareSentences(sentence)
+
+			double lpm=((lettersIn
+			Sentence(sentence))/(time*60));
+
+			System.out.println(lpm+" letters per minute");
+
+			double wpm=(wordsInSentence(sentence)/(time*60));
+
+			System.out.println(wpm+" Words per minute.");
+
+			
+
+			}
+			if (select==2){
+			System.out.println("no");
+
+			}
+
+		
+
+		}
 
 		
 	}
