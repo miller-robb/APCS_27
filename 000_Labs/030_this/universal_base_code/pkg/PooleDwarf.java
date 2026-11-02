@@ -1,6 +1,6 @@
 /*
- *	Author:  
- *  Date: 
+ *	Author:  Miller Robb
+ *  Date: 10/30/26
 */
 
 package pkg;
@@ -42,7 +42,7 @@ public class PooleDwarf {
 	}
 
 	public boolean isSameName(String name){
-		// Complete this method
+		return this.name.equalsIgnoreCase(name);
 	}
 }
 
