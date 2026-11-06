@@ -9,11 +9,21 @@ import java.util.Random;
 
 
 class starter {
-	public static void dog(String Chicken){
-		System.out.print(Chicken);
+	public static boolean checkPrime(int prime){
+		int n=prime-1;
+		int check=0;
+		while(n>=1){
+			check=
+			
+			if(check!=0){
+				return false;
+			}
+
+		}
+		return true;
 	}
+	
 	public static void main(String args[]) {
-		dog("bread");
 		
 
 
