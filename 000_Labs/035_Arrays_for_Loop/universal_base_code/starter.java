@@ -1,6 +1,6 @@
 /*
- *	Author:  
- *  Date: 
+ *	Author:  Miller Robb
+ *  Date: 11/9/26
 */
 
 import pkg.*;
@@ -10,8 +10,17 @@ import java.util.Random;
 
 class starter {
 	public static void main(String args[]) {
-		// Your code goes below here
-		BaseClass test = new BaseClass();
+		int []arr1=new int[1001];
+		
+
+		for(int x=0; x<=1000; x++){
+			arr1[x]=(int)(Math.random()*10);
+			System.out.println(arr1[x]);
+			
+			
+
+		}
+
 
 
 		
