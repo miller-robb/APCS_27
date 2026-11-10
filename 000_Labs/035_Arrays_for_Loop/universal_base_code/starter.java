@@ -13,7 +13,7 @@ class starter {
 		int []arr1=new int[1001];
 		
 
-		for(int x=0; x<=1000; x++){
+		for(int x=0; x<1001; x++){
 			arr1[x]=(int)(Math.random()*10);
 			System.out.println(arr1[x]);
 			
