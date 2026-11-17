@@ -1,10 +1,11 @@
 /*
- *	Author:
- *  Date:
+ *	Author: Miller Robb
+ *  Date:11/16/27
 */
 import java.util.Scanner;
 
 class starter {
+	
 	public static void main(String args[]) {
 		String[] tvChars = {
 			"Walter White", "Jesse Pinkman", "Saul Goodman", "Rick Grimes",
@@ -21,24 +22,52 @@ class starter {
 		printArray(tvChars);
 		System.out.println("---------------------------------------------");
 
-		/*
+		
 		printArray(tvChars);
 		System.out.println("---------------------------------------------");
 		leftShift(tvChars, 5);
 		printArray(tvChars);
 		System.out.println("---------------------------------------------");
-		*/
+		
 	}
 
 	public static void printArray(String[] arr){
+		for(int x=0; x<20; x++){
+			if(x==19){
+				System.out.println(arr[x]);
+
+			}
+			else{
+				System.out.print(arr[x]+", ");
+
+			}
+			
+		}
+		
 
 	}
 
 	public static void leftShift(String [] arr){
+		String c=arr[0];
+		for(int x=0; x<arr.length; x++){
+			if(x==(arr.length-1)){
+				arr[arr.length-1]=c;
+			}
+			else{
+				arr[x]=arr[x+1];
+			}
+		}
+
+
 
 	}
 
 	public static void leftShift(String [] arr, int num){
+		
+		for(int x=0; x<num; x++){
+			leftShift(arr);
+			
+		}
 
 	}
 }
